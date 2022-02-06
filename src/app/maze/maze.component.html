@@ -1,0 +1,30 @@
+
+<div style="text-align: center;">
+  <div class="maze-form">
+    <label for="nRow"><h4><span class="badge badge-info">Rows</span></h4></label>
+    <input id="nRow" type="number" [(ngModel)]="row" min="1" max="500" />
+    <label for="nCol"><h4><span class="badge badge-info">Columns</span></h4></label>
+    <input id="nCol" type="number" [(ngModel)]="col" min="1" max="500" />
+    
+    <button type="button" class="btn btn-success " (click)="drawMaze()" [disabled]="busy">
+      New Maze
+    </button>
+    
+    <button type="button" class="btn btn-danger " (click)="drawSolution()">Solution</button>
+   
+  </div>
+  <section>
+    <canvas id="maze"></canvas>
+  </section>
+  <section>
+    <div class="arrows">
+      <div><span (click)="move('Up')" title="move up">⬆️</span></div>
+      <div>
+        <span (click)="move('Left')" title="move left">⬅️</span>
+        
+        <span (click)="move('Right')"  style="margin-left: 30px;" title="move right">➡️</span>
+      </div>
+      <div><span (click)="move('Down')" title="move down">⬇️</span></div>
+    </div>
+  </section>
+</div>

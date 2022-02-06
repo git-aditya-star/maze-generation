@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const keyboardMap = {\n  ArrowLeft: 'Left',\n  A: 'Left',\n  a: 'Left',\n  ArrowRight: 'Right',\n  D: 'Right',\n  d: 'Right',\n  ArrowUp: 'Up',\n  W: 'Up',\n  w: 'Up',\n  ArrowDown: 'Down',\n  S: 'Down',\n  s: 'Down'\n};","map":null,"metadata":{},"sourceType":"module"}
